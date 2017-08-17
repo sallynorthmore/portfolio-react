@@ -1,19 +1,6 @@
 // Project data
 module.exports = {
   project1: {
-    slug: 'boden',
-    title: 'Boden Styleguide',
-    image: 'boden.jpg',
-    desc: 'Some description text about the Boden project',
-    client: 'Boden',
-    agency: 'BBH London',
-    tech: 'JavaScript ES6, CSS, CSS & SVG animations',
-    tools: 'NPM, Gulp, PatternLab, PostCSS, PHP',
-    date: '2017',
-    gallery: 'more images'
-  },
-
-  project2: {
     slug: 'kosmos',
     title: 'KMPG Kosmos',
     image: 'boden.jpg',
@@ -26,86 +13,94 @@ module.exports = {
     gallery: 'more images'
   },
 
-  project3: {
+  project2: {
     slug: 'boden',
-    title: 'KMPG Kosmos',
+    title: 'Boden Styleguide',
     image: 'boden.jpg',
-    desc: 'Some description text about the Kosmos project',
-    client: 'KPMG',
-    agency: 'Fathom London',
+    desc: 'Some description text about the Boden project',
+    client: 'Boden',
+    agency: 'BBH London',
     tech: 'JavaScript ES6, CSS, CSS & SVG animations',
-    tools: 'Angular CLI, SASS',
+    tools: 'NPM, Gulp, PatternLab, PostCSS, PHP',
     date: '2017',
+    gallery: 'more images'
+  },
+
+  project3: {
+    slug: 'ilk',
+    title: 'ilk',
+    image: 'ilk.jpg',
+    desc: 'Some description text about the ilk project',
+    client: 'ilk',
+    agency: 'BBH London',
+    tech: 'JavaScript ES6, CSS',
+    tools: 'Magento, PostCSS, NPM',
+    date: '2016',
     gallery: 'more images'
   },
 
   project4: {
-    slug: 'boden',
-    title: 'KMPG Kosmos',
+    slug: 'hunt-the-hacker',
+    title: 'Hunt the Hacker',
     image: 'boden.jpg',
     desc: 'Some description text about the Kosmos project',
-    client: 'KPMG',
-    agency: 'Fathom London',
-    tech: 'JavaScript ES6, CSS, CSS & SVG animations',
-    tools: 'Angular CLI, SASS',
-    date: '2017',
+    client: 'Mattessons',
+    agency: 'Stink Studios',
+    tech: 'JavaScript ES6, CSS',
+    tools: 'LESS, NPM, OS.js',
+    date: '2016',
     gallery: 'more images'
   },
 
   project5: {
-    slug: 'boden',
-    title: 'KMPG Kosmos',
+    slug: 'paypal',
+    title: 'PayPal',
     image: 'boden.jpg',
     desc: 'Some description text about the Kosmos project',
-    client: 'KPMG',
-    agency: 'Fathom London',
+    client: 'PayPal',
+    agency: 'Lewis Purestone',
     tech: 'JavaScript ES6, CSS, CSS & SVG animations',
     tools: 'Angular CLI, SASS',
-    date: '2017',
+    date: '2016',
     gallery: 'more images'
   },
 
   project6: {
-    slug: 'boden',
-    title: 'KMPG Kosmos',
+    slug: 'fom',
+    title: 'Force Over Mass',
     image: 'boden.jpg',
-    desc: 'Some description text about the Kosmos project',
-    client: 'KPMG',
-    agency: 'Fathom London',
+    desc: 'Some description text about the FOM project',
+    client: 'Force Over Mass Capital',
+    agency: 'Ideas Made Digital Ltd',
     tech: 'JavaScript ES6, CSS, CSS & SVG animations',
     tools: 'Angular CLI, SASS',
-    date: '2017',
+    date: '2015',
     gallery: 'more images'
   },
 
   project7: {
-    slug: 'boden',
-    title: 'KMPG Kosmos',
+    slug: 'guardian',
+    title: 'the guardian Gift Guide',
     image: 'boden.jpg',
     desc: 'Some description text about the Kosmos project',
-    client: 'KPMG',
-    agency: 'Fathom London',
+    client: 'the guardian',
+    agency: 'Ideas Made Digital Ltd',
     tech: 'JavaScript ES6, CSS, CSS & SVG animations',
-    tools: 'Angular CLI, SASS',
-    date: '2017',
+    tools: 'Backbone.js, SASS',
+    date: '2015',
     gallery: 'more images'
   },
 
   project8: {
-    slug: 'boden',
-    title: 'Mussels',
-    image: 'https://i.istockimg.com/file_thumbview_approve/40450406/5/stock-photo-40450406-steamed-mussels.jpg',
-    desc: 'The best mussels from the Pacific Northwest with a full-flavored and complex taste.',
-    price: 425,
-    status: 'available'
-  },
-
-  project9: {
-    slug: 'boden',
-    title: 'Jumbo Prawns',
-    image: 'https://i.istockimg.com/file_thumbview_approve/67121439/5/stock-photo-67121439-fresh-tiger-shrimp-on-ice-on-a-black-stone-table.jpg',
-    desc: 'With 21-25 two bite prawns in each pound, these sweet morsels are perfect for shish-kabobs.',
-    price: 2250,
-    status: 'available'
+    slug: 'abbey-road',
+    title: 'Inside Abbey Road',
+    image: 'boden.jpg',
+    desc: 'Some description text about the Abbey project',
+    client: 'Google',
+    agency: 'Stink Studio',
+    tech: 'JavaScript ES6, CSS, CSS & SVG animations',
+    tools: 'Backbone.js',
+    date: '2015',
+    gallery: 'more images'
   }
 };

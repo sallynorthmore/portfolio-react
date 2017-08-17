@@ -1,9 +1,8 @@
 import React from 'react';
 import Hero from './Hero';
-// import Project from './Project';
 import dataProjects from '../data-projects';
 import { FormattedDate  } from 'react-intl';
-// import { getFunName } from '../helpers';
+import styles from "./app.css";
 
 class App extends React.Component {
 
@@ -34,25 +33,38 @@ class App extends React.Component {
 
     return (
 
-      <div className="App">
+      <div>
         {/* <button onClick={ this.loadProjects }>Load projects</button> */}
 
-        <Hero title={'Sally Northmore'} subtitle={'Front End Web Developer'} image={'image.jpg'} />
+        <header className={styles.header}>
+          <div className={styles.inner}>
+            <h1 className={styles.title}>
+              Sally Northmore
+            </h1>
+            <div className="subtitle">Web Development</div>
+          </div>
+        </header>
 
-        <ul className="list">
-            {
-              Object
-                .keys(this.state.projects)
-                .map(key => <li key={key} >
-                    <h2 className="title">
-                      {this.state.projects[key].title} <small>({this.state.projects[key].slug})</small>
-                    </h2>
-                    <a href={`project/:${this.state.projects[key].slug}`}>
-                      Go to project
-                    </a>
-                  </li>)
-            }
-        </ul>
+        <section className={styles.work}>
+          <h2 className={styles.workTitle}>
+            Recent work
+          </h2>
+          <ul className={styles.items}>
+              {
+                Object
+                  .keys(this.state.projects)
+                  .map(key => <li key={key} className={styles.item}>
+
+                      <a className={styles.projectLink} href={`project/:${this.state.projects[key].slug}`} title={this.state.projects[key].slug}>
+                      <h2 className={styles.projectTitle}>
+                        {this.state.projects[key].title}
+                      </h2>
+                      <p className={styles.projectMeta}>{this.state.projects[key].client} / {this.state.projects[key].agency}  / {this.state.projects[key].date}</p>
+                      </a>
+                    </li>)
+              }
+          </ul>
+        </section>
 
         <footer>
           <p>&copy; { this.currentYear() } Sally Northmore</p>
