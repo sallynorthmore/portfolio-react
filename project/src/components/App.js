@@ -1,8 +1,9 @@
 import React from 'react';
 import Hero from './Hero';
-import Project from './Project';
+// import Project from './Project';
 import dataProjects from '../data-projects';
 import { FormattedDate  } from 'react-intl';
+// import { getFunName } from '../helpers';
 
 class App extends React.Component {
 
@@ -13,6 +14,7 @@ class App extends React.Component {
     this.state= {
       projects: {
           project2: {
+            slug: 'kosmos',
             title: 'KMPG Kosmos',
             image: 'boden.jpg',
             desc: 'Some description text about the Kosmos project',
@@ -24,6 +26,7 @@ class App extends React.Component {
             gallery: 'more images'
           },
           project1: {
+            slug: 'boden',
             title: 'Boden Styleguide',
             image: 'boden.jpg',
             desc: 'Some description text about the Boden project',
@@ -52,9 +55,22 @@ class App extends React.Component {
     )
   }
 
+  goToStore(event) {
+    event.preventDefault();
+    console.log('go to project clicked !');
+    // grab text from box
+    console.log(event.target.ref);
+    // const projectid = this.projectInput.value;
+    // console.log(this.projectInput.value);
+    // transition from / to /:storeid
+    // Use the context setup at the bottom of file
+    // this.context.router.transitionTo(`/project/${projectid}`);
+  }
+
   render() {
 
     return (
+
       <div className="App">
         <button onClick={ this.loadProjects }>Load projects</button>
 
@@ -64,7 +80,16 @@ class App extends React.Component {
             {
               Object
                 .keys(this.state.projects)
-                .map(key => <Project key={key} index={key} details={ this.state.projects[key] } />)
+                .map(key => <li key={key} >
+                    <h2 className="title">
+                      {this.state.projects[key].title}
+                    </h2>
+                    {/* <p ref={(input) => {this.projectInput = input}}> */}
+                    <p>
+                      Slug: {this.state.projects[key].slug}
+                    </p>
+                    <a href={`project/:${this.state.projects[key].slug}`}>Go to project</a>
+                  </li>)
             }
         </ul>
 
@@ -77,6 +102,11 @@ class App extends React.Component {
       </div>
     )
   }
+}
+
+// You have to use context to reference the main router in your component
+App.contextTypes = {
+  router: React.PropTypes.object
 }
 
 export default App;
