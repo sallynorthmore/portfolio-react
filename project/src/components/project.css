@@ -14,12 +14,29 @@
   width: 100%;
 }
 
-.body {
-  margin: 10px auto 0;
+.content {
+  margin: 10px auto 60px;
   max-width: 640px;
 }
 
 p {
   line-height: 1.6;
   margin-top: 20px;
+}
+
+h3 {
+  display: inline-block;
+  font-weight: 400;
+}
+
+.meta,
+.link {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 20px 0 0;
+  line-height: 1.6;
+}
+
+.link {
+  display: inline-block;
 }

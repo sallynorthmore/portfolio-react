@@ -1,5 +1,4 @@
 import React from 'react';
-import Hero from './Hero';
 import dataProjects from '../data-projects';
 import { FormattedDate  } from 'react-intl';
 import styles from "./app.css";

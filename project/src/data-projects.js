@@ -10,7 +10,8 @@ module.exports = {
     tech: 'JavaScript ES6, CSS, CSS & SVG animations',
     tools: 'Angular CLI, SASS',
     date: '2017',
-    gallery: 'more images'
+    gallery: 'more images',
+    site: ''
   },
 
   project2: {
@@ -23,7 +24,8 @@ module.exports = {
     tech: 'JavaScript ES6, CSS, CSS & SVG animations',
     tools: 'NPM, Gulp, PatternLab, PostCSS, PHP',
     date: '2017',
-    gallery: 'more images'
+    gallery: 'more images',
+    site: ''
   },
 
   project3: {
@@ -36,7 +38,8 @@ module.exports = {
     tech: 'JavaScript ES6, CSS',
     tools: 'Magento, PostCSS, NPM',
     date: '2016',
-    gallery: 'more images'
+    gallery: 'more images',
+    site: 'ilklondon.com'
   },
 
   project4: {
@@ -49,7 +52,8 @@ module.exports = {
     tech: 'JavaScript ES6, CSS',
     tools: 'LESS, NPM, OS.js',
     date: '2016',
-    gallery: 'more images'
+    gallery: 'more images',
+    site: 'mattessons.co.uk/hunt-the-hacker'
   },
 
   project5: {
@@ -62,7 +66,8 @@ module.exports = {
     tech: 'JavaScript ES6, CSS, CSS & SVG animations',
     tools: 'Angular CLI, SASS',
     date: '2016',
-    gallery: 'more images'
+    gallery: 'more images',
+    site: ''
   },
 
   project6: {
@@ -75,7 +80,8 @@ module.exports = {
     tech: 'JavaScript ES6, CSS, CSS & SVG animations',
     tools: 'Angular CLI, SASS',
     date: '2015',
-    gallery: 'more images'
+    gallery: 'more images',
+    site: 'fomcap.com/'
   },
 
   project7: {
@@ -88,7 +94,8 @@ module.exports = {
     tech: 'JavaScript ES6, CSS, CSS & SVG animations',
     tools: 'Backbone.js, SASS',
     date: '2015',
-    gallery: 'more images'
+    gallery: 'more images',
+    site: 'theguardian.com/lifeandstyle/ng-interactive/2016/dec/01/christmas-gift-guide-2016-shopping-buy-online'
   },
 
   project8: {
@@ -101,6 +108,7 @@ module.exports = {
     tech: 'JavaScript ES6, CSS, CSS & SVG animations',
     tools: 'Backbone.js',
     date: '2015',
-    gallery: 'more images'
+    gallery: 'more images',
+    site: 'insideabbeyroad.withgoogle.com/en'
   }
 };
