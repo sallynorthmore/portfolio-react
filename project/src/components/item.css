@@ -1,0 +1,19 @@
+.item {
+  margin: 20px 0 0;
+  max-width: 280px;
+}
+
+.projectLink {
+  text-decoration: none;
+}
+
+.projectTitle {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.projectMeta {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+}

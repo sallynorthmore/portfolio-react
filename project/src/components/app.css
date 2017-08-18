@@ -66,31 +66,11 @@ a:hover {
   width: 30%;
 }
 
-.item {
-  margin: 20px 0 0;
-  max-width: 280px;
-}
-
-.projectLink {
-  text-decoration: none;
-}
-
-.projectTitle {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.projectMeta {
-  font-size: 14px;
-  font-weight: 300;
-  margin: 0;
-}
-
 .viewer {
+  background: #f9f9f9;
   position: fixed;
   width: 70%;
   height: 99%;
-  border: 1px solid black;
   top: 0px;
   right: 0;
 }

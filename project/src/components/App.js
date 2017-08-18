@@ -2,6 +2,7 @@ import React from 'react';
 import dataProjects from '../data-projects';
 import styles from "./app.css";
 import Footer from './Footer';
+import Item from './Item';
 
 class App extends React.Component {
 
@@ -18,8 +19,6 @@ class App extends React.Component {
       projects: dataProjects
     });
   }
-
-
 
   render() {
 
@@ -50,7 +49,14 @@ class App extends React.Component {
             Recent work
           </h2>
           <ul className={styles.items}>
-              {
+            {
+              Object
+                .keys(this.state.projects)
+                .map(key => <Item key={key} index={key} details={this.state.projects[key]}
+                />
+                )
+            }
+              {/* {
                 Object
                   .keys(this.state.projects)
                   .map(key => <li key={key} className={styles.item}>
@@ -62,7 +68,7 @@ class App extends React.Component {
                       <p className={styles.projectMeta}>{this.state.projects[key].client} + {this.state.projects[key].agency}, {this.state.projects[key].date}</p>
                       </a>
                     </li>)
-              }
+              } */}
           </ul>
         </section>
 
