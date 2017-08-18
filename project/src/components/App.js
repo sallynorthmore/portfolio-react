@@ -9,6 +9,7 @@ class App extends React.Component {
   constructor(){
     super();
     this.loadProjects = this.loadProjects.bind(this);
+    this.showProject = this.showProject.bind(this);
     this.state= {
       projects: dataProjects
     }
@@ -18,6 +19,12 @@ class App extends React.Component {
     this.setState({
       projects: dataProjects
     });
+  }
+
+  showProject(key) {
+    // event.preventDefault();
+    console.log(key);
+
   }
 
   render() {
@@ -32,7 +39,7 @@ class App extends React.Component {
             <h1 className={styles.title}>
               Sally Northmore
             </h1>
-            <div className="subtitle">Web Development</div>
+            {/* <div className="subtitle">Web Development</div> */}
           </div>
         </header>
 
@@ -53,22 +60,10 @@ class App extends React.Component {
               Object
                 .keys(this.state.projects)
                 .map(key => <Item key={key} index={key} details={this.state.projects[key]}
+                showProject={this.showProject}
                 />
                 )
             }
-              {/* {
-                Object
-                  .keys(this.state.projects)
-                  .map(key => <li key={key} className={styles.item}>
-
-                      <a className={styles.projectLink} href={`project/:${this.state.projects[key].slug}`} title={this.state.projects[key].slug}>
-                      <h2 className={styles.projectTitle}>
-                        {this.state.projects[key].title}
-                      </h2>
-                      <p className={styles.projectMeta}>{this.state.projects[key].client} + {this.state.projects[key].agency}, {this.state.projects[key].date}</p>
-                      </a>
-                    </li>)
-              } */}
           </ul>
         </section>
 
