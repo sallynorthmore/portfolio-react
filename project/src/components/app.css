@@ -14,21 +14,25 @@
   padding: 0;
 }
 
+a:hover {
+  color: #2196f3;
+}
+
 .header {
   align-items: center;
   color: white;
   display: flex;
-  height: 90vh;
+  height: 30vh;
   position: relative;
 }
 
 .inner {
-  margin: auto;
-  text-align: center;
+  margin: auto auto auto 20px;
+  /*text-align: center;*/
 }
 
 .title {
-  color: #202020;
+  color: black;
   font-weight: 300;
 }
 
@@ -38,23 +42,33 @@
   margin-top: 10px;
 }
 
+.summary {
+  /*font-style: italic;*/
+  line-height: 1.5;
+  padding: 40px 20px;
+  width: 25%;
+}
+
 .work {
   margin: 20px;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .workTitle {
   color: #202020;
   font-weight: 400;
+  color: black;
+  font-weight: 300;
 }
 
 .items {
   margin: 40px 0 0;
+  width: 30%;
 }
 
 .item {
-  margin: 20px auto 0;
-  max-width: 640px;
+  margin: 20px 0 0;
+  max-width: 280px;
 }
 
 .projectLink {
@@ -70,4 +84,28 @@
   font-size: 14px;
   font-weight: 300;
   margin: 0;
+}
+
+.viewer {
+  position: fixed;
+  width: 70%;
+  height: 99%;
+  border: 1px solid black;
+  top: 0px;
+  right: 0;
+}
+
+.footer {
+  position: relative;
+
+  display: flex;
+  font-size: 12px;
+  padding: 20vh 20px 20px 0;
+  margin-left: -20px;
+}
+
+.footerItem {
+  background: white;
+  display: inline-block;
+  padding-left: 40px;
 }

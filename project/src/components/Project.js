@@ -13,9 +13,9 @@ class Project extends React.Component {
         <a href="/" className={styles.top}>Home</a>
       {/* <div id={index}> */}
         <header>
-          <Hero title={'Project title'} subtitle={'Client / Agency / Year'} image={'https://i.ytimg.com/vi/6peMnVotrhY/maxresdefault.jpg'} />
+          <Hero title={'Project title'} subtitle={'Client + Agency, Year'} image={'https://i.ytimg.com/vi/6peMnVotrhY/maxresdefault.jpg'} />
         </header>
-        
+
         <section className={styles.content}>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
