@@ -94,18 +94,3 @@ a:hover {
   top: 0px;
   right: 0;
 }
-
-.footer {
-  position: relative;
-
-  display: flex;
-  font-size: 12px;
-  padding: 20vh 20px 20px 0;
-  margin-left: -20px;
-}
-
-.footerItem {
-  background: white;
-  display: inline-block;
-  padding-left: 40px;
-}
