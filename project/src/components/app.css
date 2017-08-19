@@ -67,7 +67,7 @@ a:hover {
 }
 
 .viewer {
-  background: #f9f9f9;
+  /*background: #f9f9f9;*/
   position: fixed;
   width: 70%;
   height: 99%;

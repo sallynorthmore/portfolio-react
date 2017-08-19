@@ -24,22 +24,12 @@ class App extends React.Component {
   }
 
   showProject(key) {
-    // event.preventDefault();
     console.log(key);
-    // copy state
-    // const currProject = {...this.state.currProject};
-
-    // currProject[key] = selectedProject;
-
     const selectedProject = this.state.projects[key];
-    // console.log();
-    // this.setState({ currProject });
 
     this.setState({
       currProject: selectedProject
     });
-
-    // update state
 
   }
 
@@ -56,7 +46,6 @@ class App extends React.Component {
             <h1 className={styles.title}>
               Sally Northmore
             </h1>
-            {/* <div className="subtitle">Web Development</div> */}
           </div>
         </header>
 

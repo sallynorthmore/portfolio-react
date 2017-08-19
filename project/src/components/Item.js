@@ -8,13 +8,12 @@ class Item extends React.Component {
     // const { details } = this.props;
 
     return (
-      <li className={styles.item}>
+      <li className={styles.item} onClick={() => this.props.showProject(index)} >
         <h2 className={styles.projectTitle}>
           {details.title}
         </h2>
         <p className={styles.projectMeta}>{details.client} + {details.agency}, {details.date}</p>
-        <button className={styles.projectLink} onClick={() => this.props.showProject(index)} >View</button>
-        {/* <button onClick={() => this.props.addToOrder(index)} disabled={!isAvailable}>{buttonText}</button> */}
+        {/* <button className={styles.projectLink} >View</button> */}
       </li>
     )
   }
