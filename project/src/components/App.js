@@ -3,6 +3,7 @@ import dataProjects from '../data-projects';
 import styles from "./app.css";
 import Footer from './Footer';
 import Item from './Item';
+import Viewer from './Viewer';
 
 class App extends React.Component {
 
@@ -11,7 +12,8 @@ class App extends React.Component {
     this.loadProjects = this.loadProjects.bind(this);
     this.showProject = this.showProject.bind(this);
     this.state= {
-      projects: dataProjects
+      projects: dataProjects,
+      currProject: {}
     }
   }
 
@@ -24,10 +26,25 @@ class App extends React.Component {
   showProject(key) {
     // event.preventDefault();
     console.log(key);
+    // copy state
+    // const currProject = {...this.state.currProject};
+
+    // currProject[key] = selectedProject;
+
+    const selectedProject = this.state.projects[key];
+    // console.log();
+    // this.setState({ currProject });
+
+    this.setState({
+      currProject: selectedProject
+    });
+
+    // update state
 
   }
 
   render() {
+    // console.log(this.state.currProject.title);
 
     return (
 
@@ -48,7 +65,7 @@ class App extends React.Component {
         </section>
 
         <section className={styles.viewer}>
-
+          <Viewer details={this.state.currProject} />
         </section>
 
         <section className={styles.work}>

@@ -1,0 +1,42 @@
+.top {
+  background: white;
+  color: black;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  margin: 10px auto 60px;
+  max-width: 640px;
+}
+
+p {
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+h3 {
+  display: inline-block;
+  font-weight: 400;
+}
+
+.meta,
+.link {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 20px 0 0;
+  line-height: 1.6;
+}
+
+.link {
+  display: inline-block;
+}
