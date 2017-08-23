@@ -49,10 +49,6 @@ class App extends React.Component {
           </div>
         </header>
 
-        <section className={styles.summary}>
-          I specialise in building beautiful UIs with carefully crafted CSS architecture. I have experience working across platforms, including React, Angular, Backbone and PHP applications. Recent contracts include BBH, Weiden + Kennedy, Tribal Worldwide, and Stink Studios.
-        </section>
-
         <section className={styles.viewer}>
           <Viewer details={this.state.currProject} />
         </section>
@@ -71,6 +67,10 @@ class App extends React.Component {
                 )
             }
           </ul>
+        </section>
+
+        <section className={styles.summary}>
+          I specialise in building beautiful UIs with carefully crafted CSS architecture. I have experience working across platforms, including React, Angular, Backbone and PHP applications. Recent contracts include BBH, Weiden + Kennedy, Tribal Worldwide, and Stink Studios.
         </section>
 
         <Footer />

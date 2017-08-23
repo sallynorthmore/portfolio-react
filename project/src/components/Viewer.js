@@ -1,5 +1,5 @@
 import React from 'react';
-// import Hero from './Hero';
+import Hero from './Hero';
 import styles from "./viewer.css";
 
 class Viewer extends React.Component {
@@ -7,13 +7,13 @@ class Viewer extends React.Component {
   render() {
     // const { details, index } = this.props;
     const { details } = this.props;
-    console.log(details);
+    const meta = details.agency || details.client ? `${details.agency} + ${details.client}, ${details.date}` : null;
+    const subtitle = meta ? meta : false;
 
     return (
       <div>
         <header>
-          <h1>{details.title}</h1>
-          {/* <Hero title= subtitle={""} image={details.image} /> */}
+          <Hero title={details.title} subtitle={subtitle} image={details.image} />
         </header>
 
         <section className={styles.content}>
