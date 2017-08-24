@@ -37,7 +37,6 @@ class App extends React.Component {
   }
 
   hideProject() {
-    console.log("Closing project")
     this.setState({
       currProject: {},
       active: false
@@ -84,7 +83,7 @@ class App extends React.Component {
             <h2 className={styles.workTitle}>
               About
             </h2>
-            I specialise in building beautiful UIs with carefully crafted CSS architecture. I have experience working across platforms, including React, Angular, Backbone and PHP applications. Recent contracts include BBH, Weiden + Kennedy, Tribal Worldwide, and Stink Studios.
+            <p>I specialise in building beautiful UIs with carefully crafted CSS architecture. I have experience working across platforms, including React, Angular, Backbone and PHP applications. <br/><br/> Recent contracts include BBH, Weiden + Kennedy, Tribal Worldwide, and Stink Studios.</p>
           </section>
 
           <Footer />

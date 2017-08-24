@@ -1,16 +1,5 @@
 .root {
   background: white;
-  /*height: 100%;*/
-  /*bottom: 0;*/
-  /*height: 100%;*/
-  /*left: 0;*/
-  /*max-height: 100%;
-  max-width: 100%;*/
-  /*overflow: auto;*/
-  /*position: ab;*/
-  /*right: 0;*/
-  /*top: 0;*/
-  /*width: 100%;*/
 }
 
 .header {
@@ -20,6 +9,7 @@
 .content {
   margin: 60px auto;
   max-width: 640px;
+  padding: 0 20px;
   text-align: center;
 }
 
