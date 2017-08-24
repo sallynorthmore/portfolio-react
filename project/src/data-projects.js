@@ -14,7 +14,6 @@ module.exports = {
   project2: {
     slug: 'boden',
     title: 'Boden Styleguide',
-    image: 'boden.jpg',
     desc: 'Creation of a Frontend PatternLab component library (Gulp+Mustache flavour) for a retail redesign + documentation.',
     client: 'Boden',
     agency: 'BBH London',

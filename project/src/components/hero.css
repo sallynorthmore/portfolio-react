@@ -5,6 +5,10 @@
   position: relative;
 }
 
+.spacer {
+  padding-top: 30vh;
+}
+
 .background {
   background: center transparent no-repeat;
   background-size: contain;
