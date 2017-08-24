@@ -24,7 +24,45 @@ a {
 
 .rootHasViewer {
   overflow: hidden;
+  max-height: 100vh;
+  max-width: 100%;
   position: relative;
+}
+
+.viewer {
+  opacity: 0;
+  position: fixed;
+  transition: all 0.22s ease;
+  z-index: 0;
+}
+
+.viewerActive {
+  background: white;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  transition: all 0.22s ease;
+  width: 100%;
+  z-index: 300;
+}
+
+.button {
+  background: svg-load("./close.svg", fill: #000) no-repeat center transparent;
+  background-size: 30%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  height: 60px;
+  outline: none;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100px;
+  z-index: 400;
 }
 
 .body {
@@ -54,17 +92,14 @@ a {
 
 .subtitle {
   color: #202020;
-  /*font-weight: 400;*/
   margin-top: 10px;
 }
 
 .summary {
-  /*font-style: italic;*/
   line-height: 1.5;
   max-width: 520px;
   margin: 100px auto;
   text-align: center;
-  /*width: 25%;*/
 }
 
 .work {
@@ -73,8 +108,6 @@ a {
 }
 
 .workTitle {
-  /*color: #202020;
-  font-weight: 400;*/
   font-size: 14px;
   text-transform: uppercase;
   color: black;
@@ -84,36 +117,4 @@ a {
 .items {
   margin: 40px 0 0;
   text-align: center;
-  /*max-width: 360px;*/
-  /*width: 30%;*/
-}
-
-.viewer {
-  opacity: 0;
-  position: fixed;
-  transition: all 0.22s ease;
-  z-index: 0;
-}
-
-.viewerActive {
-  opacity: 1;
-  position: fixed;
-  transition: all 0.22s ease;
-  z-index: 300;
-}
-
-.button {
-  background: svg-load("./close.svg", fill: #000) no-repeat center transparent;
-  background-size: 30%;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  height: 60px;
-  outline: none;
-  padding: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100px;
-  z-index: 400;
 }
