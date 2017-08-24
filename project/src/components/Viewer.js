@@ -5,13 +5,12 @@ import styles from "./viewer.css";
 class Viewer extends React.Component {
 
   render() {
-    // const { details, index } = this.props;
     const { details } = this.props;
     const meta = details.agency || details.client ? `${details.agency} + ${details.client}, ${details.date}` : null;
     const subtitle = meta ? meta : false;
 
     return (
-      <div>
+      <div className={styles.root}>
         <header>
           <Hero title={details.title} subtitle={subtitle} image={details.image} />
         </header>
@@ -26,7 +25,7 @@ class Viewer extends React.Component {
             <h3>Tools:</h3> { details.tools }
           </div>
 
-          <a href="#" className={styles.link}>{ details.site }</a>
+          <a href={`http://${details.site}`} target="_blank" title={`Visit ${details.title}`} className={styles.link}>{ details.site }</a>
         </section>
       </div>
     )

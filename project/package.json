@@ -37,6 +37,7 @@
     "json-loader": "0.5.4",
     "object-assign": "4.1.0",
     "path-exists": "2.1.0",
+    "postcss-inline-svg": "^3.0.0",
     "postcss-loader": "0.13.0",
     "promise": "7.1.1",
     "prop-types": "^15.5.10",
