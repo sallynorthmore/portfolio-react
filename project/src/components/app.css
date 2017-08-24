@@ -102,19 +102,18 @@ a {
   z-index: 300;
 }
 
-
 .button {
-  background: svg-load("./close.svg", fill: #fff) no-repeat center transparent;
+  background: svg-load("./close.svg", fill: #000) no-repeat center transparent;
   background-size: 30%;
   color: white;
   cursor: pointer;
   display: flex;
-  height: 100px;
+  height: 60px;
   outline: none;
   padding: 0;
   position: fixed;
-  right: 10px;
-  top: 10px;
+  right: 0;
+  top: 0;
   width: 100px;
   z-index: 400;
 }

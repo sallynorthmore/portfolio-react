@@ -11,7 +11,7 @@ class Viewer extends React.Component {
 
     return (
       <div className={styles.root}>
-        <header>
+        <header className={styles.header}>
           <Hero title={details.title} subtitle={subtitle} image={details.image} />
         </header>
 

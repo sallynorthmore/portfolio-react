@@ -13,20 +13,8 @@
   width: 100%;
 }
 
-.top {
-  background: white;
-  color: black;
-  cursor: pointer;
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  left: 0;
-  padding: 20px;
-  position: absolute;
-  text-decoration: none;
-  text-transform: uppercase;
-  top: 0;
-  width: 100%;
+.header {
+  margin-top: 60px;
 }
 
 .content {
