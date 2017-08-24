@@ -155,7 +155,8 @@ module.exports = {
 
   postcss: [
     require('autoprefixer'),
-    require('postcss-inline-svg')
+    require('postcss-inline-svg'),
+    require('postcss-nesting')
   ],
 
   // We use PostCSS for autoprefixing only.

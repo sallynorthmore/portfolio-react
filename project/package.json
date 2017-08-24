@@ -39,6 +39,7 @@
     "path-exists": "2.1.0",
     "postcss-inline-svg": "^3.0.0",
     "postcss-loader": "0.13.0",
+    "postcss-nesting": "^4.1.0",
     "promise": "7.1.1",
     "prop-types": "^15.5.10",
     "react-dev-utils": "^0.2.1",

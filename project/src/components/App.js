@@ -1,8 +1,8 @@
 import React from 'react';
 import dataProjects from '../data-projects';
+import styles from "./app.css";
 import Footer from './Footer';
 import Item from './Item';
-import styles from "./app.css";
 import Viewer from './Viewer';
 
 class App extends React.Component {
@@ -50,7 +50,7 @@ class App extends React.Component {
 
     return (
 
-      <div className={viewerActive ? styles.viewerOpen : null }>
+      <div className={viewerActive ? styles.rootHasViewer : styles.root }>
 
         <div className={styles.body}>
           <header className={styles.header}>
@@ -58,6 +58,9 @@ class App extends React.Component {
               <h1 className={styles.title}>
                 Sally Northmore
               </h1>
+              <p className={styles.subtitle}>
+                Frontend Web developer
+              </p>
             </div>
           </header>
 
@@ -78,6 +81,9 @@ class App extends React.Component {
           </section>
 
           <section className={styles.summary}>
+            <h2 className={styles.workTitle}>
+              About
+            </h2>
             I specialise in building beautiful UIs with carefully crafted CSS architecture. I have experience working across platforms, including React, Angular, Backbone and PHP applications. Recent contracts include BBH, Weiden + Kennedy, Tribal Worldwide, and Stink Studios.
           </section>
 

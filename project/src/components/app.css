@@ -14,66 +14,78 @@
   padding: 0;
 }
 
-a:hover {
-  color: #2196f3;
+a {
+  :hover {
+    color: #2196f3;
+  }
+}
+
+/* App Component */
+
+.rootHasViewer {
+  overflow: hidden;
+  position: relative;
+}
+
+.body {
+  background: white;
+  left: 0;
+  position: relative;
+  top: 0;
+  z-index: 100;
 }
 
 .header {
-  align-items: center;
   color: white;
   display: flex;
-  height: 30vh;
+  height: 50vh;
   position: relative;
 }
 
 .inner {
-  margin: auto auto auto 20px;
-  /*text-align: center;*/
+  margin: auto;
+  text-align: center;
 }
 
 .title {
   color: black;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .subtitle {
   color: #202020;
-  font-weight: 400;
+  /*font-weight: 400;*/
   margin-top: 10px;
 }
 
 .summary {
   /*font-style: italic;*/
   line-height: 1.5;
-  padding: 40px 20px;
-  width: 25%;
+  max-width: 520px;
+  margin: 100px auto;
+  text-align: center;
+  /*width: 25%;*/
 }
 
 .work {
-  margin: 20px;
-  /*text-align: center;*/
+  margin: 20px auto 0;
+  text-align: center;
 }
 
 .workTitle {
   /*color: #202020;
   font-weight: 400;*/
+  font-size: 14px;
+  text-transform: uppercase;
   color: black;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .items {
   margin: 40px 0 0;
-  max-width: 360px;
+  text-align: center;
+  /*max-width: 360px;*/
   /*width: 30%;*/
-}
-
-.body {
-  background: white;
-  left: 0;
-  position: absolute;
-  position: relative;
-  top: 0;
-  z-index: 100;
 }
 
 .viewer {
@@ -90,6 +102,7 @@ a:hover {
   z-index: 300;
 }
 
+
 .button {
   background: svg-load("./close.svg", fill: #fff) no-repeat center transparent;
   background-size: 30%;
@@ -97,15 +110,11 @@ a:hover {
   cursor: pointer;
   display: flex;
   height: 100px;
+  outline: none;
   padding: 0;
   position: fixed;
   right: 10px;
   top: 10px;
   width: 100px;
   z-index: 400;
-}
-
-.viewerOpen {
-  overflow: hidden;
-  position: relative;
 }

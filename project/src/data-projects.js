@@ -7,7 +7,7 @@ module.exports = {
     client: 'KPMG',
     agency: 'Fathom London',
     tech: 'Angular (4) + Typescript JavaScript, CSS',
-    tools: 'Angular CLI, SASS, Yarn, Sketch, NPM, Travis, Github',
+    tools: 'Angular CLI, SASS, Yarn, Sketch, NPM, Travis, Github, Docker',
     date: '2017'
   },
 
@@ -25,24 +25,38 @@ module.exports = {
     site: ''
   },
 
+  projectlipton: {
+    slug: 'lipton',
+    title: 'Lipton',
+    image: 'images/lipton.png',
+    desc: 'Styling various UI elements for Tea brand site.',
+    client: 'Unilever',
+    agency: 'Tribal Worldwhite',
+    tech: 'CSS, JavaScript',
+    tools: 'Sass, RequireJS, AEM, Whitelabel Unilever platform',
+    date: '2017',
+    gallery: '',
+    site: 'www.lipton.com/'
+  },
+
   project3: {
     slug: 'ilk',
     title: 'ilk London',
-    image: 'ilk.jpg',
+    image: 'images/ilk.png',
     desc: 'Established a Frontend theme and component library for a Magento ecommerce web site',
     client: 'ilk',
     agency: 'BBH London',
     tech: 'Magento (PHP/XML), CSS, JavaScript ES6',
-    tools: 'Magento, NPM, PostCSS, RequireJS',
+    tools: 'Magento, NPM, PostCSS, RequireJS, Vagrant',
     date: '2016',
     gallery: '',
-    site: 'ilklondon.com/'
+    site: 'www.ilklondon.com/'
   },
 
   project4: {
     slug: 'hunt-the-hacker',
     title: 'Hunt the Hacker',
-    image: 'hacker.jpg',
+    image: 'images/hacker.png',
     desc: 'Built and styled small game-like apps inside an OS.js project.',
     client: 'Mattesons',
     agency: 'Stink Studios',
@@ -56,7 +70,7 @@ module.exports = {
   project5: {
     slug: 'paypal',
     title: 'PayPal',
-    image: 'paypal.jpg',
+    image: 'images/paypal.png',
     desc: 'Various templated marketing microsite UI builds for leading online payments institution.',
     client: 'PayPal',
     agency: 'Lewis Purestone',
@@ -70,12 +84,12 @@ module.exports = {
   project6: {
     slug: 'fom',
     title: 'Force Over Mass',
-    image: 'fom.jpg',
+    image: 'images/fom02.png',
     desc: 'Contributed to Front end build and styling of CraftPHP project',
     client: 'Force Over Mass Capital',
     agency: 'Ideas Made Digital Ltd',
     tech: 'JavaScript, CSS, CSS & SVG animations',
-    tools: 'CraftPHP, Git, PostCSS, NPM, Photoshop',
+    tools: 'CraftPHP, Git, PostCSS, NPM, Photoshop, Vagrant',
     date: '2015',
     gallery: '',
     site: 'fomcap.com/'
@@ -84,7 +98,7 @@ module.exports = {
   project7: {
     slug: 'guardian',
     title: 'Christmas Gift Guide 2015',
-    image: 'guardian.jpg',
+    image: 'images/guardian.png',
     desc: 'Built and styled Backbone microsite allowing readership to browse and favourite curated Christmas Gift shop.',
     client: 'the guardian',
     agency: 'Ideas Made Digital',
@@ -98,7 +112,7 @@ module.exports = {
   project8: {
     slug: 'abbey-road',
     title: 'Inside Abbey Road',
-    image: 'google.jpg',
+    image: 'images/google.jpg',
     desc: 'Contributed to the build and styling of a Backbone component library, including animations',
     client: 'Google',
     agency: 'Stink Studio',
@@ -107,5 +121,18 @@ module.exports = {
     date: '2015',
     gallery: '',
     site: 'insideabbeyroad.withgoogle.com/en'
+  },
+
+  project9: {
+    slug: 'showstudio',
+    title: 'SHOWstudio',
+    image: 'images/showstudio.jpg',
+    desc: 'Frontend developer for fashion photographer Nick Knight\'s online platform for fashion film + art. Built a range of projects, from the first live-streamed fashion show (Alexander McQueen, 2009) to online live interviews with Lady Gaga, Gareth Pugh, and others.',
+    agency: 'SHOWstudio',
+    tech: 'JavaScript, CSS, HTML5, PHP',
+    tools: 'Nginx, CakePHP, jQuery, Git, Vagrant, Photoshop',
+    date: '2009-2014',
+    gallery: '',
+    site: 'showstudio.com'
   }
 };
