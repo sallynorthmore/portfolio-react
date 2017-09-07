@@ -70,8 +70,6 @@ class App extends React.Component {
 
           <section className={styles.summary}>
             <p>{summary}</p>
-
-            <h3>Awards</h3>
             <p><strong>Developer Award</strong>, YunoJuno Freelancer Award 2016</p>
           </section>
 
