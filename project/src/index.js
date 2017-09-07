@@ -5,6 +5,7 @@ import {BrowserRouter, Match, Miss} from 'react-router';
 import App from './components/App';
 import NotFound from './components/NotFound';
 import Project from './components/Project';
+import "./components/base.css";
 
 const Root = () => {
 
@@ -12,7 +13,7 @@ const Root = () => {
     <BrowserRouter>
       <div>
         <Match exactly pattern="/" component={App} />
-        <Match pattern="/project/:projectid" component={Project} />
+        {/* <Match pattern="/project/:projectid" render={App} /> */}
         <Miss component={NotFound} />
       </div>
     </BrowserRouter>

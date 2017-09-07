@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './Hero';
+import CSSTransitionGroup from 'react-addons-css-transition-group';
 import styles from "./viewer.css";
 
 class Viewer extends React.Component {

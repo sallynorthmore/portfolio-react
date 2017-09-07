@@ -1,5 +1,7 @@
 import React from 'react';
+import CSSTransitionGroup from 'react-addons-css-transition-group';
 import dataProjects from '../data-projects';
+import dataGeneral from '../data-general';
 import styles from "./app.css";
 import Footer from './Footer';
 import Item from './Item';
@@ -14,6 +16,7 @@ class App extends React.Component {
     this.hideProject = this.hideProject.bind(this);
 
     this.state= {
+      general: dataGeneral,
       projects: dataProjects,
       currProject: {},
       active: false
@@ -27,7 +30,6 @@ class App extends React.Component {
   }
 
   showProject(key) {
-    // console.log(key);
     const selectedProject = this.state.projects[key];
 
     this.setState({
@@ -44,6 +46,9 @@ class App extends React.Component {
   }
 
   render() {
+    const title = this.state.general.title;
+    const subtitle = this.state.general.subtitle;
+    const summary = this.state.general.summary;
     const viewerActive = this.state.active;
     const projectDetails = this.state.currProject ? this.state.currProject : null;
 
@@ -55,16 +60,16 @@ class App extends React.Component {
           <header className={styles.header}>
             <div className={styles.inner}>
               <h1 className={styles.title}>
-                Sally Northmore
+                {title}
               </h1>
               <p className={styles.subtitle}>
-                Frontend Web developer
+                {subtitle}
               </p>
             </div>
           </header>
 
           <section className={styles.summary}>
-            <p>I specialise in building beautiful UIs with carefully crafted CSS architecture. I have experience working across platforms, including React, Angular, Backbone and PHP applications. <br/><br/> Recent contracts include Fathom London, BBH, Tribal Worldwide, and Stink Studios.</p>
+            <p>{summary}</p>
           </section>
 
           <section className={styles.work}>
@@ -87,7 +92,9 @@ class App extends React.Component {
 
         </div>
         <div className={viewerActive ? styles.viewerActive : styles.viewer }>
-            <button onClick={() => this.hideProject() } className={styles.button}></button>
+            <button
+              onClick={() => this.hideProject() } className={viewerActive ? styles.button : null}
+            ></button>
             <Viewer details={projectDetails}  />
         </div>
 

@@ -1,31 +1,6 @@
-/* Reset */
-* {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  border: 0;
-  box-shadow: 0 0 0;
-  box-sizing: inherit;
-  color: #202020;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  :hover {
-    color: #2196f3;
-  }
-}
-
 /* App Component */
 
 .rootHasViewer {
-  overflow: hidden;
-  max-height: 100vh;
-  max-width: 100%;
   position: relative;
 }
 
@@ -56,7 +31,20 @@ a {
   z-index: 300;
 }
 
+@keyframes closeSlideIn {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .button {
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  animation-name: closeSlideIn;
   background: svg-load("./close.svg", fill: #000) no-repeat center transparent;
   background-size: 50%;
   color: white;
