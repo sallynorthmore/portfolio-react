@@ -45,7 +45,7 @@ module.exports = {
   project4: {
     slug: 'hunt-the-hacker',
     title: 'Hunt the Hacker',
-    image: 'images/hacker.png',
+    image: 'images/hacker.jpg',
     desc: 'Built and styled small game-like apps inside an OS.js project.',
     client: 'Mattesons',
     agency: 'Stink Studios',
@@ -59,7 +59,7 @@ module.exports = {
   project5: {
     slug: 'paypal',
     title: 'PayPal',
-    image: 'images/paypal.png',
+    image: 'images/paypal.jpg',
     desc: 'Various templated marketing microsite UI builds for leading online payments institution.',
     client: 'PayPal',
     agency: 'Lewis Purestone',
