@@ -1,15 +1,5 @@
 // Project data
 module.exports = {
-  project1: {
-    slug: 'kosmos',
-    title: 'KMPG',
-    desc: 'UI reskin of internal project for banking group, including CSS architecture updates and Animations/Transitions',
-    client: 'KPMG',
-    agency: 'Fathom London',
-    tech: 'Angular (4) + Typescript JavaScript, CSS',
-    tools: 'Angular CLI, SASS, Yarn, Sketch, NPM, Travis, Github, Docker',
-    date: '2017'
-  },
 
   project2: {
     slug: 'boden',
