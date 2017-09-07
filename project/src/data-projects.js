@@ -126,7 +126,7 @@ module.exports = {
     slug: 'showstudio',
     title: 'SHOWstudio',
     image: 'images/showstudio.jpg',
-    desc: 'Frontend developer for fashion photographer Nick Knight\'s online platform for fashion film + art. Built a range of projects, from the first live-streamed fashion show (Alexander McQueen, 2009) to online live interviews with Lady Gaga, Gareth Pugh, and others.',
+    desc: 'Frontend developer for fashion photographer Nick Knight\'s online platform for fashion film, art + ecommerce. Built a range of projects, from the first live-streamed fashion show (Alexander McQueen, 2009) to online live interviews with Lady Gaga, Gareth Pugh, and others.',
     agency: 'SHOWstudio',
     client: 'Various',
     tech: 'JavaScript, CSS, HTML5, PHP',

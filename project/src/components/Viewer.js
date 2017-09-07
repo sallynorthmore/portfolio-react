@@ -6,7 +6,7 @@ class Viewer extends React.Component {
 
   render() {
     const { details } = this.props;
-    const meta = details.agency || details.client ? `${details.agency} + ${details.client}, ${details.date}` : null;
+    const meta = details.agency || details.client ? `${details.client} + ${details.agency}, ${details.date}` : null;
     const subtitle = meta ? meta : false;
 
     return (
