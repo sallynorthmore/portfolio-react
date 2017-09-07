@@ -27,7 +27,7 @@ class App extends React.Component {
   }
 
   showProject(key) {
-    console.log(key);
+    // console.log(key);
     const selectedProject = this.state.projects[key];
 
     this.setState({
@@ -63,6 +63,10 @@ class App extends React.Component {
             </div>
           </header>
 
+          <section className={styles.summary}>
+            <p>I specialise in building beautiful UIs with carefully crafted CSS architecture. I have experience working across platforms, including React, Angular, Backbone and PHP applications. <br/><br/> Recent contracts include Fathom London, BBH, Tribal Worldwide, and Stink Studios.</p>
+          </section>
+
           <section className={styles.work}>
             <h2 className={styles.workTitle}>
               Recent work
@@ -77,13 +81,6 @@ class App extends React.Component {
                   )
               }
             </ul>
-          </section>
-
-          <section className={styles.summary}>
-            <h2 className={styles.workTitle}>
-              About
-            </h2>
-            <p>I specialise in building beautiful UIs with carefully crafted CSS architecture. I have experience working across platforms, including React, Angular, Backbone and PHP applications. <br/><br/> Recent contracts include BBH, Weiden + Kennedy, Tribal Worldwide, and Stink Studios.</p>
           </section>
 
           <Footer />

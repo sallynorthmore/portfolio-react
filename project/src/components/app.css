@@ -29,6 +29,10 @@ a {
   position: relative;
 }
 
+.rootHasViewer .body {
+  opacity: 0;
+}
+
 .viewer {
   opacity: 0;
   position: fixed;
@@ -47,7 +51,7 @@ a {
   position: fixed;
   transform: translateY(0);
   top: 0;
-  transition: all 0.25s cubic-bezier(0.420, 0.000, 0.580, 1.000);
+  transition: all 0.25s 0.2s cubic-bezier(0.420, 0.000, 0.580, 1.000);
   width: 100%;
   z-index: 300;
 }
@@ -79,17 +83,19 @@ a {
   position: relative;
   top: 0;
   z-index: 100;
+  opacity: 1;
+  transition: opacity 0.2s;
 }
 
 .header {
   color: white;
   display: flex;
-  height: 50vh;
+  height: 40vh;
   position: relative;
 }
 
 .inner {
-  margin: auto;
+  margin: 30vh auto auto;
   text-align: center;
 }
 
@@ -105,8 +111,8 @@ a {
 
 .summary {
   line-height: 1.5;
-  max-width: 520px;
-  margin: 100px auto 0;
+  max-width: 480px;
+  margin: 60px auto;
   padding: 0 20px;
   text-align: center;
 }
@@ -117,9 +123,7 @@ a {
 }
 
 .workTitle {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: black;
+  font-size: 18px;
   font-weight: 400;
 }
 
